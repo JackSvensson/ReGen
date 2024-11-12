@@ -1,0 +1,32 @@
+/* CONNECTED */
+:root {
+  --surface-secondary: #994a2f;
+  --text-primary: #502600;
+}
+
+header {
+  margin: -8px;
+}
+
+.nav-newsletter {
+  background-color: var(--surface-secondary);
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-align: center;
+}
+
+.nav-sub-item > h1 {
+  font-family: "Open-Dyslexic", sans-serif;
+}
+
+.nav-newsletter > b {
+  color: var(--text-primary);
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: -0.4000000059604645px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
