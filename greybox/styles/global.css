@@ -1,0 +1,50 @@
+:root {
+  --surface-primary: #fff1de;
+  --surface-secondary: #994a2f;
+  --surface-quaternary: #ffdc73;
+  --text-primary: #502600;
+  --text-secondary: #fff2aa;
+  --font-primary: #502600;
+  --font-secondary: #733700;
+  --button-primary: #fad047;
+}
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+} */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--surface-primary);
+}
+
+h1 {
+  font-family: "Open-Dyslexic";
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: var(--font-primary);
+}
+
+p {
+  font-family: IBM Plex Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  text-decoration-skip-ink: none;
+  color: var(--font-primary);
+}
+
+.title-and-text > p,
+.title-and-text > h1 {
+  margin: 0px;
+}
