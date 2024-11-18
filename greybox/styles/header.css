@@ -259,6 +259,6 @@ input:focus {
   justify-content: flex-start;
   align-items: flex-start;
   padding-left: 29px;
-  animation: fade-in-menu 0.2s ease-in-out;
+  animation: fade-in-menu 0.3s ease-in-out;
   opacity: 1;
 }
