@@ -1,0 +1,27 @@
+.blue-pattern {
+  background-color: var(--surface-secondary);
+}
+
+.blue-pattern:last-child {
+  padding-bottom: 28.9px;
+}
+
+.blue-pattern h3,
+.blue-pattern p {
+  margin: 0px;
+  padding: 0px;
+  width: 350px;
+  color: var(--surface-primary);
+  /* padding-bottom: 16px; */
+}
+
+.blue-pattern h3 {
+  padding-top: 28.9px;
+  font-family: "Open-Dyslexic";
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 36px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
