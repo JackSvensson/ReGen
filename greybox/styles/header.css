@@ -18,15 +18,19 @@ header {
   height: 44px;
   /* padding-top: 14px; */
   padding: 14px 38.5px;
-  color: var(--text-secondary);
+  color: var(--surface-primary);
   font-family: IBM Plex Sans;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
   letter-spacing: -0.4000000059604645px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+#logo-and-search {
+  justify-content: space-evenly;
 }
 
 .logo-container {
@@ -37,8 +41,10 @@ header {
 }
 
 .logo-container > img {
-  width: 75%;
-  height: 75%;
+  position: relative;
+  width: 94px;
+  height: 100%;
+  top: -5px;
 }
 
 .logo-container > p {
@@ -55,7 +61,7 @@ header {
 }
 
 .header-search-container {
-  width: 252px;
+  width: 230px;
   height: 40px;
   top: 82px;
   left: 138px;
@@ -69,22 +75,19 @@ header {
 
   border: 2px;
   border-style: solid;
-  border-color: var(--font-secondary);
+  border-color: var(--text-primary);
 }
 
 .header-search-container-item {
+  position: relative;
   width: 48px;
   height: 40px;
-  top: 2px;
-  left: 2px;
   gap: 0px;
-  border-radius: 16px 16px 16px 16px;
+  border-radius: 14px;
   opacity: 0px;
   background-color: var(--surface-quaternary);
-  left: 10px;
   align-items: center;
   justify-content: center;
-
   display: flex;
 }
 
@@ -92,7 +95,7 @@ header {
   font-family: IBM Plex Sans;
   font-size: 20px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 24px;
   letter-spacing: -0.4000000059604645px;
   text-align: left;
   text-underline-position: from-font;
@@ -110,8 +113,8 @@ header {
   width: 195px;
   border: none;
   position: absolute;
-  left: -200px;
-  top: -22px;
+  left: -180px;
+  top: -21px;
 
   font-family: IBM Plex Sans;
   font-size: 16px;
@@ -133,8 +136,129 @@ input:focus {
   outline: none;
 }
 
-.nav-sub-item {
+.nav-links {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: center;
+}
+
+.nav-links > a {
+  padding-left: 10px;
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.nav-img {
+  width: 32px;
+  height: 32px;
+}
+
+.nav-sub-item {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown > a {
+  position: relative;
+  top: -8px;
+}
+
+.dropdown > img {
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  opacity: 0;
+  top: 183px;
+  left: 0px;
+  background-color: var(--surface-primary);
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+  width: 160px;
+  height: 312px;
+  justify-content: center;
+}
+
+@keyframes fade-in-menu {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dropdown button {
+  all: unset;
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+.dropdown button:focus {
+  outline: revert;
+}
+
+.dropdown-content h1 {
+  padding-top: 1px;
+  margin: 0;
+}
+
+.dropdown-content img {
+  width: 32px;
+  height: 32px;
+  align-self: flex-end;
+}
+
+.dropdown-content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 29px;
+  animation: fade-in-menu 0.2s ease-in-out;
+  opacity: 1;
 }

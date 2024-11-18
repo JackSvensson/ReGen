@@ -17,8 +17,9 @@
       rel="stylesheet"
     />
     <!-- CSS -->
-    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/body.css" />
     <link rel="stylesheet" href="./styles/text.css" />
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
@@ -35,11 +36,11 @@
         <nav>
           <div class="nav-container">
             <div class="nav-item">
-              <div class="nav-sub-item">
+              <div class="nav-sub-item" id="logo-and-search">
                 <div class="logo-container">
-                  <img src="./assets/Union.png" alt="" />
+                  <img src="./assets/logga.png" alt="" />
                   <!-- @todo ^ WHEN CONVERTED TO A PHP-FILE, USE __DIR__-->
-                  <p>ReGen</p>
+                  <!-- <p>ReGen</p> -->
                 </div>
                 <div class="header-search-container">
                   <div class="header-search-container-item">
@@ -48,21 +49,41 @@
                   <form action="" name="header-search">
                     <input
                       type="text"
-                      placeholder="Leksaker för blinda barn..."
+                      placeholder="Leksaker för blinda"
                     /><!-- @todo DOUBLECHECK COPY-->
                   </form>
                 </div>
               </div>
-              <div class="nav-sub-item dropdown">
+              <div class="nav-sub-item">
                 <!-- @todo add relevant links?-->
-                <a href="">Meny</a>
-                <a href="">Logga In</a>
-                <a href="">Kundvagn</a>
-                <div class="nav-sub-item inactive">
-                  <a href="">Kategorier</a>
-                  <a href="">Om Oss</a>
-                  <a href="">Tillgänglighet</a>
-                  <a href="">Bästsäljare</a>
+                <div class="dropdown nav-links dropdown-sub-item">
+                  <img src="./assets/hamburger.png" alt="" class="nav-img" />
+                  <button onclick="myFunction()" class="dropbtn">Meny</button>
+                  <div class="dropdown-content" id="myDropdown">
+                    <img
+                      src="./assets/cancel.png"
+                      alt=""
+                      onclick="myFunction()"
+                      class="dropbtn"
+                    />
+                    <h1>Meny</h1>
+                    <a href="">Kategorier</a>
+                    <a href="">Om Oss</a>
+                    <a href="">Tillgänglighet</a>
+                    <a href="">Bästsäljare</a>
+                  </div>
+                </div>
+                <div class="log-in nav-links">
+                  <img src="./assets/user.png" alt="" class="nav-img" />
+                  <a href="">Logga In</a>
+                </div>
+                <div class="cart nav-links">
+                  <img
+                    src="./assets/shopping-cart.png"
+                    alt=""
+                    class="nav-img"
+                  />
+                  <a href="">Kundvagn</a>
                 </div>
               </div>
               <script src="./header-menu.js"></script>

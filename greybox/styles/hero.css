@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--button-primary);
+  background-color: var(--surface-tertiary);
   border-radius: 16px;
 }
 
