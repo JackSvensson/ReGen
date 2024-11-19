@@ -189,7 +189,6 @@ input:focus {
   top: 183px;
   left: 0px;
   background-color: var(--surface-primary);
-  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
   z-index: 1;
   width: 160px;
   height: 312px;
@@ -248,9 +247,12 @@ input:focus {
   text-decoration: none;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
 }
 
 .show {
