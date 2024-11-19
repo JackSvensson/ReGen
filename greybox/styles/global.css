@@ -80,6 +80,7 @@ b {
   display: block;
 }
 
+<<<<<<< Updated upstream
 /* BUTTONS */
 .buttons {
   display: flex;
@@ -93,3 +94,52 @@ b {
   width: 32px;
   height: 32px;
 }
+=======
+.pitch-item {
+  display: flex;
+  width: 350px;
+  height: 350px;
+}
+
+h4 {
+  font-family: "Open-Dyslexic";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  align-items: center;
+}
+
+b {
+  font-family: "Open-Dyslexic";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  align-items: center;
+}
+
+.myButton {
+  font-family: "Open-Dyslexic";
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 20px;
+  align-items: center;
+}
+
+.turntable {
+  margin: 0px; 
+}
+.turntable ul {
+  padding: 0px;
+  margin: 0px; 
+}
+.turntable ul li {
+  list-style-type: none;
+  display: none; 
+}
+.turntable ul li img {
+  width: 100%; 
+}
+.turntable ul li.active {
+  display: block; 
+}
+>>>>>>> Stashed changes
