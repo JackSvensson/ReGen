@@ -25,3 +25,37 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
+.products-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.products-item img {
+  height: 350px;
+  width: 350px;
+  align-self: center;
+}
+
+.product-and-price {
+  width: 350px;
+  height: 142px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-and-price h6,
+.product-and-price p {
+  margin: 0px;
+}
+
+.product-cta-button {
+  width: 173px;
+  height: 64px;
+  padding: 16px 0px 0px 0px;
+  gap: 12px;
+  border-radius: 16px;
+  opacity: 0px;
+}

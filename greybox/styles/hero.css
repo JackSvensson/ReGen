@@ -8,14 +8,6 @@
   /* margin: -8px; */
 }
 
-.hero-cta-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--surface-tertiary);
-  border-radius: 16px;
-}
-
 article {
   padding: 16px 40px;
 }
@@ -33,7 +25,7 @@ article {
   width: 302px;
 }
 
-.hero-cta-button > img {
+.buttons > img {
   width: 32px;
   height: 32px;
 }

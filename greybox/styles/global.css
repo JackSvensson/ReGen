@@ -25,6 +25,7 @@ body {
   background-color: var(--surface-primary);
 }
 
+/* FONTS AND TEXT-CONTAINERS */
 h1 {
   font-family: "Open-Dyslexic";
   font-size: 24px;
@@ -70,10 +71,25 @@ b {
   color: var(--text-tertiary);
 }
 
+/* DROPDOWN MENU STUFFS */
 .inactive {
   display: none;
 }
 
 .active {
   display: block;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--surface-tertiary);
+  border-radius: 16px;
+}
+
+.buttons img {
+  width: 32px;
+  height: 32px;
 }
