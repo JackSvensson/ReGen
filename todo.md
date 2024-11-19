@@ -2,6 +2,7 @@
 
 - Work top down in index.html in greybox
 - Find out how to change spacing between letters
+- Look through all the 'alt'-attributes of imgs to make sure they're apt
 
 ## FEEDBACK FROM JACK
 

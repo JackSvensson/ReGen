@@ -89,7 +89,7 @@ b {
   border-radius: 16px;
 }
 
-.buttons img {
+.buttons > img {
   width: 32px;
   height: 32px;
 }

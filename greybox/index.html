@@ -88,16 +88,6 @@
               </div>
               <script src="./header-menu.js"></script>
             </div>
-            <!-- <div class="nav-item">
-              <div class="nav-sub-item">
-                <img src="" alt="" />
-                <h6></h6>
-              </div>
-              <div class="nav-sub-item">
-                <img src="" alt="" />
-                <h6></h6>
-              </div>
-            </div> -->
           </div>
         </nav>
       </div>
@@ -138,14 +128,13 @@
           </p>
         </article>
         <div class="products-grid">
-          <!-- @todo FIGURE OUT HOW TO ONLY PRESENT TWO ITEMS IN MOBILE VIEW -->
           <h3>Bästsäljare</h3>
-          <div class="products-item">
+          <div class="product-item-container">
             <img
               src="./assets/Baby_Walker_V1.jpg"
               alt="A kid's walker, made of wood."
             />
-            <div>
+            <div class="product-text-container">
               <div class="product-and-price">
                 <h6>Baby Walker</h6>
                 <p>749kr</p>
@@ -160,54 +149,105 @@
               </div>
             </div>
           </div>
-          <div class="products-item">
-            <h3><!-- @todo CONTENT GOES HERE --></h3>
-            <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-            <div>
-              <h6><!-- @todo CONTENT GOES HERE --></h6>
-              <p><!-- @todo CONTENT GOES HERE --></p>
-            </div>
-            <b><!-- @todo CONTENT GOES HERE --></b>
-            <div class="cta-button">
-              <p><!-- @todo CONTENT GOES HERE --></p>
-              <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-            </div>
-          </div>
-          <div class="products-item">
-            <h3><!-- @todo CONTENT GOES HERE --></h3>
-            <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-            <div>
-              <h6><!-- @todo CONTENT GOES HERE --></h6>
-              <p><!-- @todo CONTENT GOES HERE --></p>
-            </div>
-            <b><!-- @todo CONTENT GOES HERE --></b>
-            <div class="cta-button">
-              <p><!-- @todo CONTENT GOES HERE --></p>
-              <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-            </div>
-          </div>
-          <div class="products-item">
-            <h3><!-- @todo CONTENT GOES HERE --></h3>
-            <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-            <div>
-              <h6><!-- @todo CONTENT GOES HERE --></h6>
-              <p><!-- @todo CONTENT GOES HERE --></p>
-            </div>
-            <b><!-- @todo CONTENT GOES HERE --></b>
-            <div class="cta-button">
-              <p><!-- @todo CONTENT GOES HERE --></p>
-              <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
+          <div class="product-item-container">
+            <img
+              src="./assets/800px-M9-pistolet.jpg"
+              alt="A kid's walker, made of wood."
+            />
+            <div class="product-text-container">
+              <div class="product-and-price">
+                <h6>Oironiskt en pistol</h6>
+                <p>7549kr</p>
+              </div>
+              <b>Självförsvar för den lille</b>
+              <div class="product-cta-button buttons">
+                <h1>Köp nu</h1>
+                <img
+                  src="./assets/arrow-right.png"
+                  alt="An arrow pointing right on the right hand side of the button."
+                />
+              </div>
             </div>
           </div>
         </div>
       </div>
       <article class="sustainability">
-        <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
+        <img
+          src="./assets/Face_Learner_Environment.png"
+          alt="The Face Learner, our children's toy with a screen displaying a friendly face"
+        />
         <div class="title-and-text">
-          <h3><!-- @todo CONTENT GOES HERE --></h3>
-          <b><!-- @todo CONTENT GOES HERE --></b>
+          <h3>Hållbarhet</h3>
+          <p>
+            ReGen arbetar för en hållbar framtid med miljövänliga material och
+            ansvarsfull produktion. Våra leksaker kommer i återvinningsbara
+            förpackningar, och vi använder energieffektiva
+            tillverkningsprocesser för att minimera miljöpåverkan. Läs mer om
+            hur vi jobbar för en grönare framtid.
+          </p>
+          <div class="buttons">
+            <h1>Om oss</h1>
+            <img
+              src="./assets/arrow-right.png"
+              alt="An arrow pointing right on the right hand side of the button."
+              id="about-us-arrow"
+            />
+          </div>
         </div>
       </article>
+      <div class="products-grid">
+        <h3>Rekommenderat</h3>
+        <div class="product-item-container">
+          <img
+            src="./assets/Braille_Writer_Front.png"
+            alt="A kid's walker, made of wood."
+          />
+          <div class="product-text-container">
+            <div class="product-and-price">
+              <h6>Braille Writer</h6>
+              <p>1149kr</p>
+            </div>
+            <b>Kännbara mönster och former</b>
+            <div class="product-cta-button buttons">
+              <h1>Köp nu</h1>
+              <img
+                src="./assets/arrow-right.png"
+                alt="An arrow pointing right on the right hand side of the button."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="product-item-container">
+          <img
+            src="./assets/Face_Learner_Environment.png"
+            alt="A kid's walker, made of wood."
+          />
+          <div class="product-text-container">
+            <div class="product-and-price">
+              <h6>Face Learner</h6>
+              <p>2359kr</p>
+            </div>
+            <b>Lär ansiktsuttryck och känslor</b>
+            <div class="product-cta-button buttons">
+              <h1>Köp nu</h1>
+              <img
+                src="./assets/arrow-right.png"
+                alt="An arrow pointing right on the right hand side of the button."
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <article class="title-and-text blue-pattern">
+        <h3>Designa din leksak</h3>
+        <p>
+          Skapa en personlig upplevelse – välj färger, anpassa funktioner och
+          gör leken ännu roligare med individuella designval. Låt ditt barn
+          uttrycka sin egen stil och få en leksak som känns unik.
+        </p>
+      </article>
+
       <article class="user-design">
         <div class="title-and-text">
           <h3><!-- @todo CONTENT GOES HERE --></h3>
