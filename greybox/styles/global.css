@@ -80,8 +80,6 @@ b {
   display: block;
 }
 
-<<<<<<< Updated upstream
-/* BUTTONS */
 .buttons {
   display: flex;
   align-items: center;
@@ -94,7 +92,6 @@ b {
   width: 32px;
   height: 32px;
 }
-=======
 .pitch-item {
   display: flex;
   width: 350px;
@@ -142,4 +139,3 @@ b {
 .turntable ul li.active {
   display: block; 
 }
->>>>>>> Stashed changes
