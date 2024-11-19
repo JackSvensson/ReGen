@@ -141,7 +141,7 @@
               </div>
               <b>Navigera genom vibrationer</b>
               <div class="product-cta-button buttons">
-                <h1>Köp nu</h1>
+                <h1>Förbeställ</h1>
                 <img
                   src="./assets/arrow-right.png"
                   alt="An arrow pointing right on the right hand side of the button."
@@ -161,7 +161,7 @@
               </div>
               <b>Självförsvar för den lille</b>
               <div class="product-cta-button buttons">
-                <h1>Köp nu</h1>
+                <h1>Förbeställ</h1>
                 <img
                   src="./assets/arrow-right.png"
                   alt="An arrow pointing right on the right hand side of the button."
@@ -209,7 +209,7 @@
             </div>
             <b>Kännbara mönster och former</b>
             <div class="product-cta-button buttons">
-              <h1>Köp nu</h1>
+              <h1>Förbeställ</h1>
               <img
                 src="./assets/arrow-right.png"
                 alt="An arrow pointing right on the right hand side of the button."
@@ -229,7 +229,7 @@
             </div>
             <b>Lär ansiktsuttryck och känslor</b>
             <div class="product-cta-button buttons">
-              <h1>Köp nu</h1>
+              <h1>Förbeställ</h1>
               <img
                 src="./assets/arrow-right.png"
                 alt="An arrow pointing right on the right hand side of the button."
@@ -267,19 +267,30 @@
           </ul>
         </div>
         <div class="pitch-item">
-          <img id="myImg" src="/greybox/assets/Green0001-min.png" alt="blå färg" /><!-- @todo CONTENT GOES HERE -->
+          <img
+            id="myImg"
+            src="/greybox/assets/Green0001-min.png"
+            alt="blå färg"
+          /><!-- @todo CONTENT GOES HERE -->
           <h4>Blå</h4>
           <b><button id="myButton">Blue</button></b>
         </div>
         <div class="pitch-item">
-          <img id="myImage" src="/greybox/assets/Blue0001-min.png" alt="" /><!-- @todo CONTENT GOES HERE -->
+          <img
+            id="myImage"
+            src="/greybox/assets/Blue0001-min.png"
+            alt=""
+          /><!-- @todo CONTENT GOES HERE -->
           <h4>Green</h4>
-          <b><Button id="myButtons">Green</Button></b>
+          <b><button id="myButtons">Green</button></b>
         </div>
         <div class="pitch-item">
-          <img src="/greybox/assets/Brown0001-min.png" alt="" /><!-- @todo CONTENT GOES HERE -->
+          <img
+            src="/greybox/assets/Brown0001-min.png"
+            alt=""
+          /><!-- @todo CONTENT GOES HERE -->
           <h4>Brown</h4>
-          <b><button onclick=ThirdImage()>Brown</button></b>
+          <b><button onclick="ThirdImage()">Brown</button></b>
         </div>
         <div class="pitch-item">
           <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
@@ -289,72 +300,94 @@
       </div>
       <script src="./Changing-color.js"></script>
     </main>
-    <footer>
-      <section class="footer-newsletter">
-        <h4>Nyhetsbrev</h4>
-        <b>Prenumenera på vårt nyhetsbrev och få 15% på första köpet!</b>
-        <div>
-          <form action=""><!-- @todo EMAIL CONTENT GOES HERE --></form>
-          <div class="cta-footer-button">
-            <b><!-- @todo CONTENT GOES HERE --></b>
+    <footer class="blue-pattern">
+      <div class="footer-margin-helper">
+        <section class="footer-newsletter">
+          <h4>Nyhetsbrev</h4>
+          <b>Prenumenera på vårt nyhetsbrev och få 15% på första köpet!</b>
+          <div>
+            <div class="header-search-container" id="footer-email">
+              <!-- @todo fix the letter spacing lol -->
+              <form action="" name="header-search">
+                <input
+                  type="text"
+                  placeholder="Din e-postadress"
+                /><!-- @todo DOUBLECHECK COPY-->
+              </form>
+              <div class="header-search-container-item">
+                <p>Klicka</p>
+                <img
+                  src="./assets/send.png"
+                  alt="Send button, a small paper plane."
+                />
+              </div>
+            </div>
+            <b class="terms-and-conditions-apply">
+              *Se erbjudandevillkor vid registrering
+            </b>
+          </div>
+        </section>
+        <section class="footer-links-container">
+          <div class="links-item">
+            <h4>Shop</h4>
+            <a href="">Munmotorik</a>
+            <a href="">Lugn & Fokus</a>
+            <a href="">Lugn & Fokus igen</a>
+            <a href="">Ljud/hörsel</a>
+            <a href="">Anti-stress</a>
+            <a href="">Ålder</a>
+          </div>
+          <div class="links-item">
+            <h4>Tillgänglighet</h4>
+            <a href="">Autismspektrumtillstånd</a>
+            <a href="">Uppmärksamhetsstörningar</a>
+            <a href="">Intellektuell funktionsnedsättning</a>
+            <a href="">Tal- och språkstörningar</a>
+            <a href="">Synskador</a>
+            <a href="">Hörselskador</a>
+          </div>
+          <div class="links-item">
+            <h4>Om Oss</h4>
+            <a href="">Vår Vision</a>
+            <a href="">Värderingar</a>
+            <a href="">Vår historia</a>
+            <a href="">Hållbarhet</a>
+            <a href="">Våra Material</a>
+          </div>
+          <div class="links-item chat-with-AI">
+            <h4>Chatta med AI</h4>
+            <b
+              >Få vägledning genom AI för att hitta rätt leksak för ditt barns
+              behov</b
+            >
+            <img
+              src="./assets/message-square.png"
+              alt=""
+            /><!-- @todo CONTENT GOES HERE -->
+          </div>
+        </section>
+        <section class="footer-end">
+          <div class="footer-logo">
+            <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
+            <h4>ReGen</h4>
+          </div>
+          <div class="footer-language">
+            <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
+            <h4><!-- @todo CONTENT GOES HERE --></h4>
             <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
           </div>
-          <p class="terms-and-conditions-apply"></p>
-        </div>
-      </section>
-      <section class="footer-links-container">
-        <div class="links-item">
-          <h4><!-- @todo CONTENT GOES HERE --></h4>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-        </div>
-        <div class="links-item">
-          <h4><!-- @todo CONTENT GOES HERE --></h4>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-        </div>
-        <div class="links-item">
-          <h4><!-- @todo CONTENT GOES HERE --></h4>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-          <a href=""><!-- @todo CONTENT GOES HERE --></a>
-        </div>
-        <div class="links-item chat-with-AI">
-          <h4><!-- @todo CONTENT GOES HERE --></h4>
-          <b><!-- @todo CONTENT GOES HERE --></b>
-          <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-        </div>
-      </section>
-      <section class="footer-end">
-        <div class="footer-logo">
-          <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-          <h4>ReGen</h4>
-        </div>
-        <div class="footer-language">
-          <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-          <h4><!-- @todo CONTENT GOES HERE --></h4>
-          <img src="" alt="" /><!-- @todo CONTENT GOES HERE -->
-        </div>
-      </section>
-      <section class="footer-legal">
-        <a href=""></a>
-        <!-- @todo CONTENT GOES HERE; WEBSITE -->
-        <a href=""></a>
-        <!-- @todo CONTENT GOES HERE; PRIVACY -->
-        <a href=""></a>
-        <!-- @todo CONTENT GOES HERE; COOKIES -->
-        <a href=""></a>
-        <!-- @todo CONTENT GOES HERE; TERMS & CONDITIONS -->
-      </section>
+        </section>
+        <section class="footer-legal">
+          <a href=""></a>
+          <!-- @todo CONTENT GOES HERE; WEBSITE -->
+          <a href=""></a>
+          <!-- @todo CONTENT GOES HERE; PRIVACY -->
+          <a href=""></a>
+          <!-- @todo CONTENT GOES HERE; COOKIES -->
+          <a href=""></a>
+          <!-- @todo CONTENT GOES HERE; TERMS & CONDITIONS -->
+        </section>
+      </div>
     </footer>
   </body>
 </html>

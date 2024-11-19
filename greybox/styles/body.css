@@ -1,5 +1,6 @@
 .blue-pattern {
   background-color: var(--surface-secondary);
+  background-image: url("/assets/tileable_banner_mobile.png");
 }
 
 .blue-pattern:last-child {
@@ -8,11 +9,23 @@
 
 .blue-pattern h3,
 .blue-pattern p {
-  margin: 0px;
   padding: 0px;
-  width: 350px;
+  width: 100%;
   color: var(--surface-primary);
   /* padding-bottom: 16px; */
+}
+
+.blue-pattern p {
+  margin: 0px;
+}
+
+main h3 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 28px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 
 .blue-pattern h3 {
@@ -21,7 +34,6 @@
   font-size: 32px;
   font-weight: 800;
   line-height: 36px;
-  text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }

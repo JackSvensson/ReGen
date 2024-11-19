@@ -1,20 +1,105 @@
-footer {
-    width: 100%;
-    height: 1431px;
-    top: 5403px;
-    object-fit: cover;
-    overflow: auto;
-    background-color: var(--surface-secondary);
+.footer-margin-helper {
+  margin: 0px 40px 0px 40px;
 }
 
-h4 {
- display: flex;
-   flex-direction: column;
-    gap: 16px;
+footer b {
+  font-family: IBM Plex Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+
+  padding-top: 16px;
+
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--surface-primary);
 }
 
-b {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.footer-newsletter {
+  padding-top: 40px;
+}
+
+.footer-newsletter > h4 {
+  margin: 0px;
+  margin-bottom: 16px;
+}
+
+#footer-email {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  border: 2px;
+  border-style: solid;
+  border-color: var(--surface-primary);
+  margin: 16px 0px 16px 0px;
+}
+
+#footer-email > form > input {
+  height: 60px;
+  left: 12px;
+  top: -30px;
+  border: 0px;
+  border-right: 2px;
+  border-style: solid;
+  columns: var(--surface-primary);
+  border-color: var(--surface-primary);
+  font-family: IBM Plex Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--surface-primary);
+}
+
+#footer-email > form > input::placeholder {
+  color: var(--surface-primary);
+  opacity: 1;
+}
+
+.terms-and-conditions-apply {
+  text-align: right;
+  align-self: flex-end;
+}
+
+#footer-email > div {
+  height: unset;
+  display: flex;
+  position: relative;
+  background-color: unset;
+  left: -20px;
+}
+
+/* @todo FIXA LETTER SPACING */
+#footer-email > div > p {
+  font-family: "Open-Dyslexic";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 22px;
+}
+
+.footer-links-container > div > h4 {
+  font-family: "Open-Dyslexic";
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 26px;
+  text-align: left;
+  padding-top: 40px;
+  margin: 0px;
+}
+
+.footer-links-container > .links-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.links-item > a {
+  color: var(--surface-primary);
+  font-weight: 400;
+  padding-top: 16px;
+}
+
+.footer-links-container > div > img {
+  margin-top: 16px;
+  width: 40px;
+  height: 40px;
 }

@@ -8,7 +8,7 @@
 
 ## JACK TODO
 
-- Work bottom up in index.html in greybox
+- Finish the java selector
 
 ## FEEDBACK FROM VIKTOR
 

@@ -53,22 +53,24 @@ p {
 
 h4 {
   font-family: "Open-Dyslexic";
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 800;
-  line-height: 22px;
+  line-height: 26px;
   text-align: left;
   text-decoration-skip-ink: none;
   color: var(--text-tertiary);
 }
 
-b {
-  font-family: "Open-Dyslexic";
+a {
+  font-family: IBM Plex Sans;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 20px;
   text-align: left;
+  text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: var(--text-tertiary);
+  color: var(--text-primary);
+  text-decoration: none;
 }
 
 /* DROPDOWN MENU STUFFS */
@@ -98,22 +100,6 @@ b {
   height: 350px;
 }
 
-h4 {
-  font-family: "Open-Dyslexic";
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 20px;
-  align-items: center;
-}
-
-b {
-  font-family: "Open-Dyslexic";
-  font-size: 16px;
-  font-weight: 800;
-  line-height: 20px;
-  align-items: center;
-}
-
 .myButton {
   font-family: "Open-Dyslexic";
   font-size: 16px;
@@ -123,19 +109,19 @@ b {
 }
 
 .turntable {
-  margin: 0px; 
+  margin: 0px;
 }
 .turntable ul {
   padding: 0px;
-  margin: 0px; 
+  margin: 0px;
 }
 .turntable ul li {
   list-style-type: none;
-  display: none; 
+  display: none;
 }
 .turntable ul li img {
-  width: 100%; 
+  width: 100%;
 }
 .turntable ul li.active {
-  display: block; 
+  display: block;
 }

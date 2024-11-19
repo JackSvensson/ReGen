@@ -1,15 +1,11 @@
-h3,
+h3 {
+  font-family: "Open-Dyslexic";
+}
 h6 {
   font-family: "Open-Dyslexic";
   font-weight: 800;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-}
-
-h3 {
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
 }
 
 h6 {
