@@ -18,9 +18,18 @@ article {
   gap: 16px;
 }
 
-#hero-cta-button-01 {
-  width: 160px;
+.title-and-text > h1 {
+  margin-top: 24px;
 }
+
+#hero-cta-button-01 {
+  width: 183px;
+}
+
 #hero-cta-button-02 {
-  width: 302px;
+  width: 327px;
+}
+
+.hero-cta-button > h1 {
+  font-size: 18px;
 }

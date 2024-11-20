@@ -1,3 +1,10 @@
+h1,
+h3,
+h4,
+h6 {
+  letter-spacing: 5.5px;
+}
+
 h3 {
   font-family: "Open-Dyslexic";
 }

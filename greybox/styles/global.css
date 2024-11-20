@@ -85,7 +85,7 @@ a {
 .buttons {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: var(--surface-tertiary);
   border-radius: 16px;
 }

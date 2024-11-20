@@ -1,6 +1,6 @@
 .blue-pattern {
   background-color: var(--surface-secondary);
-  background-image: url("/assets/tileable_banner_mobile.png");
+  background-image: url("/greybox/assets/tileable_banner_mobile.png");
 }
 
 .blue-pattern:last-child {
@@ -17,6 +17,7 @@
 
 .blue-pattern p {
   margin: 0px;
+  font-size: 20px;
 }
 
 main h3 {
@@ -29,13 +30,19 @@ main h3 {
 }
 
 .blue-pattern h3 {
-  padding-top: 28.9px;
+  padding-top: 8px;
+  margin-bottom: 0px;
   font-family: "Open-Dyslexic";
   font-size: 32px;
   font-weight: 800;
   line-height: 36px;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+main article {
+  padding-bottom: 40px;
+  padding-top: 0px;
 }
 
 .product-item-container {
@@ -95,12 +102,17 @@ main h3 {
 }
 
 .product-cta-button {
-  width: 173px;
+  width: 210px;
   height: 64px;
-  gap: 12px;
+  gap: 2px;
   border-radius: 16px;
   opacity: 0px;
   padding: 0px;
+  margin-top: 16px;
+}
+
+.product-cta-button > h1 {
+  font-size: 18px;
 }
 
 .sustainability {
@@ -118,10 +130,15 @@ main h3 {
 }
 
 .sustainability > .title-and-text > .buttons {
+  width: 169px;
+}
+
+/* OLD BUTTON */
+/* .sustainability > .title-and-text > .buttons {
   width: 50%;
   background-color: rgba(0, 0, 0, 0);
   border: 4px;
   border-style: solid;
   border-color: var(--surface-quaternary);
   border-radius: 16px;
-}
+} */

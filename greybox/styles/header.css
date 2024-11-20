@@ -110,10 +110,10 @@ header {
   /* position: relative; */
   background-color: rgba(255, 0, 0, 0);
   height: 40px;
-  width: 195px;
+  width: 161px;
   border: none;
   position: absolute;
-  left: -180px;
+  left: -173px;
   top: -21px;
 
   font-family: IBM Plex Sans;
