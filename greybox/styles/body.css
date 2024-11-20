@@ -118,6 +118,8 @@ main article {
 .sustainability {
   padding-top: 37px; /*@todo ?????*/
   padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sustainability > div > h3 {
