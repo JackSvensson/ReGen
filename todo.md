@@ -1,8 +1,10 @@
+## TASKS
+
+- Look through all the 'alt'-attributes of imgs to make sure they're apt
+
 ## VIKTOR TODO
 
-- Work top down in index.html in greybox
-- Find out how to change spacing between letters
-- Look through all the 'alt'-attributes of imgs to make sure they're apt
+- Reconfigure layout so it works for desktop
 
 ## FEEDBACK FROM JACK
 
@@ -11,6 +13,8 @@
 - Finish the java selector
 
 ## FEEDBACK FROM VIKTOR
+
+- Be mindful when applying CSS styles so that you only target the elements you intend to
 
 ## MUST HAVES
 
