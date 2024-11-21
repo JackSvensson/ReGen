@@ -1,8 +1,117 @@
+/* CATCHING STUFF THAT LOOKS BAD IN LOWER RESOLUTION */
 @media only screen and (max-width: 414px) {
   #footer-email > div > p {
     display: none;
   }
   #footer-email > div {
     left: -40px;
+  }
+}
+
+/* NICE TO HAVE: CHANGE SOME LAYOUT BETWEEN PHONE AND DESKTOP */
+/* @media only screen and (min-width: 820px) {
+  #extra-product-01,
+  #extra-product-02 {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 819px) {
+  #extra-product-01,
+  #extra-product-02 {
+    display: none;
+  }
+  .products-desktop {
+    display: flex;
+    gap: 24px;
+  }
+} */
+
+/* DESKTOP CHANGES */
+@media only screen and (min-width: 1440px) {
+  /* CHANGE FLEX DIRECTION OF PRODUCTS AND DISPLAY 'EM DIFFERENTLY */
+
+  .desktop-inactive {
+    display: none;
+  }
+
+  .products-grid {
+    align-self: center;
+  }
+
+  .products-desktop {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .product-text-container {
+    width: 292px;
+  }
+
+  .product-and-price {
+    width: 100%;
+  }
+
+  .product-item-container > img {
+    width: 292px;
+    height: 292px;
+    object-fit: cover;
+    object-position: 30% 0;
+  }
+
+  /* CHANGE THE DISPLAY PROPERTIES OF TITLE-AND-TEXT ELEMENTS */
+  .blue-block {
+    flex-direction: row;
+    padding: 40px;
+    align-items: center;
+  }
+
+  .blue-block > h3 {
+    padding: 0px;
+    margin: 0px;
+    width: 670px;
+    font-size: 54px;
+    line-height: 58px;
+  }
+  .blue-block > p {
+    width: 670px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  /* SUSTAINABILITY */
+  .sustainability {
+    flex-direction: row-reverse;
+  }
+
+  .sustainability > .title-and-text {
+    width: 387px;
+  }
+
+  .sustainability > .title-and-text > h3 {
+    text-align: left;
+    width: 387px;
+  }
+
+  /* FOOTER */
+  .footer-links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links-container div {
+    width: 20%;
+  }
+
+  #footer-email {
+    width: 50%;
+  }
+
+  #footer-email div {
+    left: 167px;
+    width: 70%;
   }
 }

@@ -82,6 +82,10 @@ a {
   display: block;
 }
 
+.desktop {
+  display: none;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -124,4 +128,9 @@ a {
 }
 .turntable ul li.active {
   display: block;
+}
+
+extra-product-01,
+extra-product-02 {
+  display: none;
 }
