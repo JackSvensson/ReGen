@@ -1,0 +1,27 @@
+.container {
+    text-align: center;
+}
+
+.toy {
+    width: 350px;
+    height: 350px;
+    margin: 0 auto;
+    cursor: grab;
+}
+
+#toy-image {
+    width: 350px;
+    height: 350px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-family: "Open-Dyslexic";
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -1,12 +1,16 @@
 h1,
 h3,
 h4,
-h6 {
+h6,
+h7 {
   letter-spacing: 5.5px;
 }
 
 h3 {
   font-family: "Open-Dyslexic";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px;
 }
 h6 {
   font-family: "Open-Dyslexic";
@@ -19,4 +23,11 @@ h6 {
   font-size: 18px;
   line-height: 22px;
   text-align: left;
+}
+
+h7 {
+  font-family: "Open-Dyslexic";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 22px; 
 }

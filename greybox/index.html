@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./styles/hero.css" />
     <link rel="stylesheet" href="./styles/footer.css" />
     <link rel="stylesheet" href="./styles/queries.css" />
+    <link rel="stylesheet" href="./styles/turntable.css">
   </head>
   <body>
     <header>
@@ -259,49 +260,76 @@
         </p>
       </article>
 
-      <!-- <article class="user-design">
+      <article class="user-design">
         <div class="title-and-text">
-          <h3></h3>
-          <b></b>
+          <h3>Face learner</h3>
+          
         </div>
       </article>
-      <div class="design-container"></div>
-      <div class="pitch-container">
-        <div id="myTurntable" class="turntable">
-          <ul>
-            <li data-img-src="/greybox/assets/Blue0001-min.png"></li>
-            <li data-img-src="/greybox/assets/Blue0002-min.png"></li>
-            <li data-img-src="/greybox/assets/Blue0003-min.png"></li>
-            <li data-img-src="/greybox/assets/Blue0004-min.png"></li>
-          </ul>
+      <div class="container">
+        <div class="toy" id="toy">
+            <img src="/greybox/assets/Blue0004-min.png" alt="Leksak Röd" id="toy-image">
+            </div>
+          <div class="title-and-text">
+            <h7>Välj färg</h7>
+            </div>
+                        
+            
+        <div class="btnbox">
+            <button class="mybtn mybtn1" onclick="changeColor('red')"></button>
+            <button class="mybtn mybtn2" onclick="changeColor('blue')"></button>
+            <button class="mybtn mybtn3" onclick="changeColor('green')"></button>
+            <button class="mybtn mybtn4" onclick="changeColor('yellow')"></button>
         </div>
-        <div class="pitch-item">
+
+        <div class="product-text-container">
+        <div class="product-cta-button buttons">
+          <h1>Klar</h1>
           <img
-            id="myImg"
-            src="/greybox/assets/Green0001-min.png"
-            alt="blå färg"
-          />
-          <h4>Blå</h4>
-          <b><button id="myButton">Blue</button></b>
-        </div>
-        <div class="pitch-item">
-          <img id="myImage" src="/greybox/assets/Blue0001-min.png" alt="" />
-          <h4>Green</h4>
-          <b><button id="myButtons">Green</button></b>
-        </div>
-        <div class="pitch-item">
-          <img src="/greybox/assets/Brown0001-min.png" alt="" />
-          <h4>Brown</h4>
-          <b><button onclick="ThirdImage()">Brown</button></b>
-        </div>
-        <div class="pitch-item">
-          <img src="" alt="" />
-          <h4></h4>
-          <b></b>
-        </div>
+          src="./assets/arrow-right.png"
+          alt="An arrow pointing right on the right hand side of the button."
+        />
+          </div>
+          </div>
+          <div class="info-container">
+            <div class="info-grid">
+                <div class="info-item">
+                    <div class="icon">🛒</div>
+                    <div class="title">Gratis frakt</div>
+                    <div class="description">Det är gratis frakt på alla ordrar i Sverige.</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="icon">🚚</div>
+                    <div class="title">Leverans</div>
+                    <div class="description">1-2 dagars leveranstid</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="icon">↩️</div>
+                    <div class="title">Ångerrätt</div>
+                    <div class="description">Du har alltid 30 dagars ångerrätt.</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="icon">💳</div>
+                    <div class="title">Betalning</div>
+                    <div class="description">
+                      <span class="payment-mobile-text">Vi samarbetar med klarna.</span>
+                <span class="payment-desktop-text">Vi samarbetar med klarna för att underlätta betalningssätt.</span>
+            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+         
+
+    </div>
+    <script src="turntable.js"></script>
       </div>
-      <script src="./Changing-color.js"></script>
-    --></main>
+    </div>
+
+  </main>
     <footer class="blue-pattern">
       <div class="footer-margin-helper">
         <section class="footer-newsletter">

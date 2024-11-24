@@ -108,20 +108,41 @@ a {
   align-items: center;
 }
 
-.turntable {
-  margin: 0px;
+.mybtn {
+  color: beige;
+  height: 50px;
+  font-size: 20px;
+  margin: 5px;
+  border: none;
+  width: 100px;
 }
-.turntable ul {
-  padding: 0px;
-  margin: 0px;
+
+.btnbox {
+    border: none; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    border-radius: 50%; 
+    justify-content: space-around;
+  }
+
+.mybtn1 {
+  background-color: #764C2A;
+  border-radius: 50%;
 }
-.turntable ul li {
-  list-style-type: none;
-  display: none;
+
+.mybtn2 {
+  background-color: #626DF7;
+  border-radius: 50%;
 }
-.turntable ul li img {
-  width: 100%;
+
+.mybtn3 {
+  background-color: #FFB927;
+  border-radius: 50%;
 }
-.turntable ul li.active {
-  display: block;
+
+.mybtn4 {
+  background-color: #FF8599;
+  border-radius: 50%;
 }
+
