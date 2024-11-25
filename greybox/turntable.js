@@ -95,9 +95,9 @@ document.addEventListener("DOMContentLoaded", () => {
           const deltaX = event.clientX - startX;
           if (Math.abs(deltaX) > 50) {
               if (deltaX > 0) {
-                  currentImageIndex = (currentImageIndex + 1) % 4;
+                  currentImageIndex = (currentImageIndex + 1) % 12;
               } else {
-                  currentImageIndex = (currentImageIndex - 1 + 4) % 4;
+                  currentImageIndex = (currentImageIndex - 1 + 12) % 12;
               }
               showImage(currentImageIndex);
               startX = event.clientX;
