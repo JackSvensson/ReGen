@@ -235,3 +235,13 @@ line-height: 22PX;
       display: none;
   }
 }
+
+.rotera {
+  border-radius: 50%;
+}
+
+info-rotera p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
