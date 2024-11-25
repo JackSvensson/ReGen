@@ -82,6 +82,10 @@ a {
   display: block;
 }
 
+.desktop {
+  display: none;
+}
+
 .buttons {
   display: flex;
   align-items: center;
@@ -144,5 +148,10 @@ a {
 .mybtn4 {
   background-color: #FF8599;
   border-radius: 50%;
+}
+
+extra-product-01,
+extra-product-02 {
+  display: none;
 }
 

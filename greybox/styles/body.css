@@ -45,7 +45,8 @@ main article {
   padding-top: 0px;
 }
 
-.product-item-container {
+.product-item-container,
+.products-desktop {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
