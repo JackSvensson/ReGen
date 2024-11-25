@@ -23,3 +23,4 @@
 ## NICE TO HAVES
 
 - header menu also fades out when not focused
+- sticky header

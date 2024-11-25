@@ -136,6 +136,21 @@ input:focus {
   outline: none;
 }
 
+.header-spacing-helper {
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+}
+
+.header-links-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  width: 100%;
+}
+
 .nav-links {
   display: flex;
   align-items: center;

@@ -1,5 +1,5 @@
 let currentImageIndex = 0;
-let currentColor = 'red';
+let currentColor = "red";
 let isDragging = false;
 let startX = 0;
 
@@ -66,7 +66,7 @@ const images = {
 
 
 function showImage(index) {
-  const toyImage = document.getElementById('toy-image');
+  const toyImage = document.getElementById("toy-image");
   toyImage.src = images[currentColor][index];
 }
 
@@ -76,18 +76,18 @@ function changeColor(color) {
   showImage(currentImageIndex);
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  const toyElement = document.getElementById('toy');
+document.addEventListener("DOMContentLoaded", () => {
+  const toyElement = document.getElementById("toy");
 
-  toyElement.addEventListener('mousedown', (event) => {
-      isDragging = true;
-      startX = event.clientX;
-      toyElement.style.cursor = 'grabbing';
+  toyElement.addEventListener("mousedown", (event) => {
+    isDragging = true;
+    startX = event.clientX;
+    toyElement.style.cursor = "grabbing";
   });
 
-  document.addEventListener('mouseup', () => {
-      isDragging = false;
-      toyElement.style.cursor = 'grab';
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    toyElement.style.cursor = "grab";
   });
 
   document.addEventListener('mousemove', (event) => {
@@ -95,9 +95,9 @@ document.addEventListener('DOMContentLoaded', () => {
           const deltaX = event.clientX - startX;
           if (Math.abs(deltaX) > 50) {
               if (deltaX > 0) {
-                  currentImageIndex = (currentImageIndex + 1) % 12;
+                  currentImageIndex = (currentImageIndex + 1) % 4;
               } else {
-                  currentImageIndex = (currentImageIndex - 1 + 12) % 12;
+                  currentImageIndex = (currentImageIndex - 1 + 4) % 4;
               }
               showImage(currentImageIndex);
               startX = event.clientX;
