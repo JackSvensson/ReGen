@@ -173,17 +173,17 @@ footer b {
 }
 
 @media (max-width: 767px) {
-.bottom-footer {
-  flex-direction: column;
-  align-items: flex-start;
-}
+  .bottom-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-.last-footer >p {
-justify-content: center;
-text-align: center;
-  font-size: 18px; 
-  padding: 32px;
+.last-footer > p {
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  /* padding: 32px; */
 }
 
 @media (max-width: 767px) {
