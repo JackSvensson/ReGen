@@ -51,6 +51,18 @@ p {
   margin: 0px;
 }
 
+@media (min-width: 768px) {
+  .title-and-text > p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .title-and-text > h3 {
+    font-size: 32px;
+  }
+}
+
 h4 {
   font-family: "Open-Dyslexic";
   font-size: 22px;

@@ -230,6 +230,14 @@
     width: 387px;
   }
 
+  .title-and-text-03 {
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+  }
+
   /* FOOTER */
   .footer-links-container {
     display: flex;
@@ -250,3 +258,4 @@
     width: 70%;
   }
 }
+
