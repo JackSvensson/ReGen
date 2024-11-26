@@ -29,3 +29,11 @@
 .hero-cta-button > h1 {
   font-size: 18px;
 }
+
+/* MEDIA QUIERIES MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .hero-title-and-text {
+    padding: 0px 40px 40px 40px;
+  }
+}

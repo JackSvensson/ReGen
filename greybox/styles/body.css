@@ -1,6 +1,6 @@
 .blue-pattern {
   background-color: var(--surface-secondary);
-  background-image: url("/greybox/assets/tileable_banner_mobile.png");
+  background-image: url("/assets/tileable_banner_mobile.png");
 }
 
 .blue-pattern:last-child {
@@ -68,8 +68,6 @@ main article {
   width: 350px;
   align-self: center;
 }
-
-
 
 .product-text-container > b {
   font-family: IBM Plex Sans;
@@ -184,28 +182,33 @@ main article {
 .title {
   font-size: 18px;
   font-weight: 800;
-line-height: 22PX;
+  line-height: 22px;
   margin-bottom: 8px;
-  color: #1F2343;
+  color: #1f2343;
 }
 
 .description {
   font-family: IBM Plex Sans;
   font-size: 16px;
   font-weight: 400;
-  color: #1F2343;
-  line-height: 20PX;
+  color: #1f2343;
+  line-height: 20px;
+}
+
+.info-item > div > img {
+  width: 24px;
+  height: 24px;
 }
 
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .info-container {
-      width: 100%;
-      max-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .info-grid {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .payment-desktop-text {
@@ -220,26 +223,36 @@ line-height: 22PX;
 /* Desktop styles */
 @media screen and (min-width: 768px) {
   .info-container {
-      width: 100%;
-      max-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
   }
 
   .info-grid {
-      grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
-  
+
   /* Switch text content for desktop */
   .payment-desktop-text {
-      display: block;
+    display: block;
   }
-  
+
   .payment-mobile-text {
-      display: none;
+    display: none;
   }
 }
 
+/* MEDIA QUIERIES MOBILE */
 
+@media only screen and (max-width: 600px) {
+  .blue-block {
+    padding: 0px 40px 40px 40px;
+  }
 
+  .sustainability {
+    padding: 0px 40px;
+  }
 
-
-
+  .info-grid {
+    display: grid;
+  }
+}

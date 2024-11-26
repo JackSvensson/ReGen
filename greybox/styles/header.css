@@ -8,6 +8,10 @@ header {
   z-index: 10;
 }
 
+.nav-container {
+  padding-bottom: 8px;
+}
+
 .nav-newsletter {
   background-color: var(--surface-secondary);
   width: 100%;
@@ -275,4 +279,12 @@ input:focus {
   padding-left: 29px;
   animation: fade-in-menu 0.3s ease-in-out;
   opacity: 1;
+}
+
+/* MEDIA QUIERIES MOBILE */
+
+@media only screen and (max-width: 600px) {
+  .header-search-container > form > input {
+    left: -180px;
+  }
 }

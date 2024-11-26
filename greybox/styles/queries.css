@@ -308,8 +308,29 @@
 
   .info-item {
     padding: 0px;
-    max-width: 292px;
+    /* width: 292px; */
+    /* max-width: 292px; */
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .info-item:nth-child(1) {
+    gap: 20px;
+    display: flex;
+  }
+
+  .icon {
+    margin: 0px;
+  }
+
+  .info-item > div:nth-child(2) {
+    width: 226px;
+  }
+
+  .info-item > div > img {
+    width: 32px;
+    height: 32px;
   }
 
   /* FOOTER */
