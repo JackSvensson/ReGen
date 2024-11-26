@@ -111,6 +111,10 @@ footer b {
   padding-top: 16px;
 }
 
+.links-item > a:hover {
+  text-decoration: underline;
+}
+
 .footer-links-container > div > img {
   margin-top: 16px;
   width: 40px;

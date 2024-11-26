@@ -122,31 +122,31 @@ a {
 }
 
 .btnbox {
-    border: none; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    border-radius: 50%; 
-    justify-content: space-around;
-  }
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  justify-content: space-around;
+}
 
 .mybtn1 {
-  background-color: #764C2A;
+  background-color: #764c2a;
   border-radius: 50%;
 }
 
 .mybtn2 {
-  background-color: #626DF7;
+  background-color: #626df7;
   border-radius: 50%;
 }
 
 .mybtn3 {
-  background-color: #FFB927;
+  background-color: #ffb927;
   border-radius: 50%;
 }
 
 .mybtn4 {
-  background-color: #FF8599;
+  background-color: #ff8599;
   border-radius: 50%;
 }
 
@@ -155,3 +155,13 @@ extra-product-02 {
   display: none;
 }
 
+/* BUTTONS :) */
+.buttons {
+  transition: background-color 0.5s;
+}
+
+.buttons:hover {
+  cursor: pointer;
+
+  background-color: var(--surface-quaternary);
+}

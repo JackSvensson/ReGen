@@ -125,9 +125,9 @@
     font-weight: 800;
     line-height: 45px;
     text-align: left;
-    color: var(--font-primary);
+    color: var(--surface-primary);
 
-    top: 198px;
+    top: 208px;
     left: 101px;
   }
 
@@ -136,20 +136,31 @@
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    color: var(--surface-primary);
 
-    top: 255px;
+    top: 289px;
     left: 101px;
     width: 405px;
   }
 
   #hero-cta-button-01 {
-    top: 327px;
+    top: 337px;
     left: 101px;
+
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    color: var(--text-primary);
   }
 
   #hero-cta-button-02 {
-    top: 327px;
+    top: 337px;
     left: 340px;
+
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 24px;
+    color: var(--text-primary);
   }
 
   .hero-title-and-text > h1,
