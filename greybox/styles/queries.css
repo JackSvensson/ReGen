@@ -233,17 +233,65 @@
     width: 588px;
     font-size: 32px;
   }
+  /* CONFIGURATOR */
   .sustainability > img {
     height: 608px;
     width: 608px;
     padding-bottom: 40px;
     padding-right: 60px;
+    align-items: flex-start;
+    padding-left: 100px;
   }
-.sustainability > p {
-font-size: 20px;
-}
+
+  #desktop-configurator-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    padding-left: 100px;
+    justify-content: flex-start;
+    gap: 0px;
+  }
+
+  #desktop-configurator-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #desktop-configurator-container {
+    align-items: flex-start;
+  }
+
   .container {
     display: flex;
+    justify-content: center;
+    align-self: flex-end;
+  }
+  .configurator-done-button > div > h1 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+  }
+
+  #btnbox {
+    padding-bottom: 130px;
+    gap: 0px;
+  }
+
+  .info-container {
+    margin-top: -100px;
+    padding-top: 0px;
+  }
+
+  /* @todo check if necessary */
+  .user-design {
+    padding: 0px;
+  }
+
+  .info-item {
+    padding: 0px;
+    max-width: 292px;
+    flex-direction: row;
   }
 
   /* FOOTER */
@@ -267,4 +315,3 @@ font-size: 20px;
     justify-content: flex-start;
   }
 }
-
