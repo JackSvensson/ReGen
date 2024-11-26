@@ -223,8 +223,8 @@
 
   .sustainability > .title-and-text {
     width: 588px;
-    padding-top: 10rem;
-    padding-right: 32px;
+    padding-top: 224px;
+    padding-right: 24px;
     padding-left: 100px;
   }
 
@@ -238,7 +238,7 @@
     height: 608px;
     width: 608px;
     padding-bottom: 40px;
-    padding-right: 60px;
+    padding-right: 100px;
     align-items: flex-start;
     padding-left: 100px;
   }

@@ -79,12 +79,12 @@
     align-items: center; */
   }
 
-  .title-and-text {
+  /*.title-and-text {
     grid-column: 2;
     text-align: left;
     align-self: start;
     margin-bottom: 0.5rem;
-  }
+  }/*
 
   .color-selection {
     grid-column: 2;
