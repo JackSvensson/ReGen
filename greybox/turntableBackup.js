@@ -74,6 +74,38 @@ function changeColor(color) {
   showImage(currentImageIndex);
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const toyElement = document.getElementById("toy");
+
+  toyElement.addEventListener("mousedown", (event) => {
+    isDragging = true;
+    startX = event.clientX;
+    toyElement.style.cursor = "grabbing";
+  });
+
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    toyElement.style.cursor = "grab";
+  });
+
+  document.addEventListener("mousemove", (event) => {
+    if (isDragging) {
+      const deltaX = event.clientX - startX;
+      if (Math.abs(deltaX) > 50) {
+        if (deltaX > 0) {
+          currentImageIndex = (currentImageIndex + 1) % 12;
+        } else {
+          currentImageIndex = (currentImageIndex - 1 + 12) % 12;
+        }
+        showImage(currentImageIndex);
+        startX = event.clientX;
+      }
+    }
+  });
+
+  // showImage(currentImageIndex);
+});
+
 function showImageDesktop(index) {
   const toyImageDesktop = document.getElementById("toy-image-desktop");
   toyImageDesktop.src = images[currentColor][index];
@@ -86,65 +118,33 @@ function changeColorDesktop(color) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Common variables
-  const toyElement = document.getElementById("toy");
   const toyElementDesktop = document.getElementById("toy-desktop");
 
-  // Handle mouse events for both toy and toy-desktop
-  [toyElement, toyElementDesktop].forEach((element) => {
-    element.addEventListener("mousedown", (event) => {
-      isDragging = true;
-      startX = event.clientX;
-      element.style.cursor = "grabbing";
-      console.log("mousedown");
-    });
-
-    document.addEventListener("mouseup", () => {
-      isDragging = false;
-      element.style.cursor = "grab";
-      console.log("mouseup");
-    });
-
-    element.addEventListener("mousemove", (event) => {
-      if (isDragging) {
-        const deltaX = event.clientX - startX;
-        console.log("deltaX: ", deltaX); // Debugging deltaX value
-        if (Math.abs(deltaX) > 50) {
-          console.log("We're dragging: IF STATEMENT 2"); //@debug
-          if (deltaX > 0) {
-            currentImageIndex = (currentImageIndex + 1) % 12;
-          } else {
-            currentImageIndex = (currentImageIndex - 1 + 12) % 12;
-          }
-          if (element === toyElementDesktop) {
-            showImageDesktop(currentImageIndex); // Changed to showImageDesktop
-          } else {
-            showImage(currentImageIndex);
-          }
-          startX = event.clientX;
-        }
-      }
-    });
+  toyElementDesktop.addEventListener("mousedown", (event) => {
+    isDragging = true;
+    startX = event.clientX;
+    toyElementDesktop.style.cursor = "grabbing";
   });
-});
 
-element.addEventListener("mousemove", (event) => {
-  if (isDragging) {
-    const deltaX = event.clientX - startX;
-    console.log("mousemove fired - deltaX: ", deltaX); // Debugging if event is firing
-    if (Math.abs(deltaX) > 50) {
-      console.log("We are dragging: IF STATEMENT 2");
-      if (deltaX > 0) {
-        currentImageIndex = (currentImageIndex + 1) % 12;
-      } else {
-        currentImageIndex = (currentImageIndex - 1 + 12) % 12;
+  document.addEventListener("mouseup", () => {
+    isDragging = false;
+    toyElementDesktop.style.cursor = "grab";
+  });
+
+  document.addEventListener("mousemove", (event) => {
+    if (isDragging) {
+      const deltaX = event.clientX - startX;
+      if (Math.abs(deltaX) > 50) {
+        if (deltaX > 0) {
+          currentImageIndex = (currentImageIndex + 1) % 12;
+        } else {
+          currentImageIndex = (currentImageIndex - 1 + 12) % 12;
+        }
+        showImageDesktop(currentImageIndex); // Changed to showImageDesktop
+        startX = event.clientX;
       }
-      if (element === toyElementDesktop) {
-        showImageDesktop(currentImageIndex);
-      } else {
-        showImage(currentImageIndex);
-      }
-      startX = event.clientX;
     }
-  }
+  });
+
+  // showImageDesktop(currentImageIndex); // Changed to showImageDesktop
 });
