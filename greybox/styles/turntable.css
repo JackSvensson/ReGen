@@ -55,8 +55,7 @@
         display: grid;
         grid-template-columns: 608px 1fr;
         gap: 4rem;
-        padding: 4rem;
-        width: 1440px;
+        
         margin: 0 auto;
     }
     
@@ -119,7 +118,7 @@
     .info-grid {
         display: flex;
         justify-content: space-between;
-        max-width: 1440px;
         margin: 0 auto;
     }
 }
+

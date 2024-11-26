@@ -69,20 +69,7 @@ main article {
   align-self: center;
 }
 
-@media (min-width: 768px) {
-  .product-item-container > img,
-  .sustainability > img {
-    height: 608px;
-    width: 608px;
-    align-self: center;
-  }
-}
 
-@media (min-width: 768px) {
-  .title-and-text-02 {
-   left: 0px;
-  }
-  }
 
 .product-text-container > b {
   font-family: IBM Plex Sans;
