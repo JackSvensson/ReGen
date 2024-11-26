@@ -252,14 +252,32 @@
     gap: 0px;
   }
 
+  .title-and-text-03 {
+    padding-left: 100px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+
   #desktop-configurator-container > div {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
   }
 
   #desktop-configurator-container {
     align-items: flex-start;
+  }
+
+  .configurator-text-helper {
+    margin-bottom: 60px;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+  }
+
+  .configurator-right-container {
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .container {
@@ -276,6 +294,7 @@
   #btnbox {
     padding-bottom: 130px;
     gap: 0px;
+    width: 608px;
   }
 
   .info-container {
