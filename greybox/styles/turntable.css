@@ -64,9 +64,11 @@
     grid-column: 1;
     width: 608px;
     height: 608px;
+    cursor: grab;
+    user-select: none;
   }
 
-  #toy-image {
+  #toy-image, #toy-image-desktop {
     grid-column: 1;
     width: 608px;
     height: 608px;

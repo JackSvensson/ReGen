@@ -73,6 +73,7 @@ function changeColor(color) {
   showImage(currentImageIndex);
 }
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const toyElement = document.getElementById("toy");
 
@@ -103,4 +104,48 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   showImage(currentImageIndex);
+});
+
+function showImageDesktop(index) {
+  const toyImageDesktop = document.getElementById("toy-image-desktop");
+  toyImageDesktop.src = images[currentColor][index];
+}
+
+function changeColorDesktop(color) {
+  currentColor = color;
+  currentImageIndex = 0;
+  showImageDesktop(currentImageIndex);  // Changed to showImageDesktop
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toyElementDesktop = document.getElementById("toy-desktop");
+
+  toyElementDesktop.addEventListener("mousedown", (event) => {
+      isDragging = true;
+      startX = event.clientX;
+      toyElementDesktop.style.cursor = "grabbing";
+  });
+
+  document.addEventListener("mouseup", () => {
+      isDragging = false;
+      toyElementDesktop.style.cursor = "grab";
+  });
+
+  document.addEventListener("mousemove", (event) => {
+      if (isDragging) {
+          const deltaX = event.clientX - startX;
+          if (Math.abs(deltaX) > 50) {
+              if (deltaX > 0) { 
+                debug.log("We are dragging") //@debug
+                  currentImageIndex = (currentImageIndex + 1) % 12;
+              } else {
+                  currentImageIndex = (currentImageIndex - 1 + 12) % 12;
+              }
+              showImageDesktop(currentImageIndex);  // Changed to showImageDesktop
+              startX = event.clientX;
+          }
+      }
+  });
+
+  showImageDesktop(currentImageIndex);  // Changed to showImageDesktop
 });
