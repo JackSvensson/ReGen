@@ -221,7 +221,7 @@ input:focus {
   animation: fade-out-menu 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 0;
-  top: 183px;
+  top: 117px;
   left: 0px;
   background-color: var(--surface-primary);
   z-index: 20;
