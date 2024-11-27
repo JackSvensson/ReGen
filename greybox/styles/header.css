@@ -3,7 +3,7 @@ header {
   top: 0;
   width: 100%;
   object-fit: cover;
-  overflow: auto;
+  overflow: visible;
   background-color: var(--surface-primary);
   z-index: 10;
 }
@@ -185,7 +185,6 @@ input:focus {
 
 .dropdown {
   float: left;
-  overflow: hidden;
 }
 
 .dropdown > a {
@@ -198,19 +197,6 @@ input:focus {
   top: 2px;
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  opacity: 0;
-  top: 183px;
-  left: 0px;
-  background-color: var(--surface-primary);
-  z-index: 1;
-  width: 160px;
-  height: 312px;
-  justify-content: center;
-}
-
 @keyframes fade-in-menu {
   from {
     opacity: 0;
@@ -218,6 +204,30 @@ input:focus {
   to {
     opacity: 1;
   }
+}
+
+@keyframes fade-out-menu {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  animation: fade-out-menu 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  top: 183px;
+  left: 0px;
+  background-color: var(--surface-primary);
+  z-index: 20;
+  width: 160px;
+  height: 320px;
+  justify-content: center;
 }
 
 .dropdown button {
@@ -261,6 +271,7 @@ input:focus {
   text-decoration-skip-ink: none;
   color: var(--text-primary);
   text-decoration: none;
+  width: 90%;
 }
 
 .dropdown-content a:hover {
