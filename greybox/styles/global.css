@@ -21,6 +21,12 @@ body {
   padding: 0;
 }
 
+.center-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 body {
   background-color: var(--surface-primary);
 }

@@ -256,4 +256,8 @@ main article {
   .info-grid {
     display: grid;
   }
+
+  #hero-cta-button-03 {
+    width: 350px;
+  }
 }
