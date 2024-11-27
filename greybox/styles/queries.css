@@ -64,6 +64,10 @@
     align-content: center;
   }
 
+  .nav-newsletter > b:hover {
+    text-decoration: underline;
+  }
+
   .nav-sub-item {
     justify-content: space-between;
   }
