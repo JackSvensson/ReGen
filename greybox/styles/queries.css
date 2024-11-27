@@ -8,6 +8,16 @@
   }
 }
 
+#hero-cta-button-03 {
+  width: 360px;
+  height: 64px;
+  gap: 2px;
+  border-radius: 16px;
+  opacity: 0px;
+  padding: 0px;
+  margin-top: 16px;
+}
+
 /* NICE TO HAVE: CHANGE SOME LAYOUT BETWEEN PHONE AND DESKTOP */
 /* @media only screen and (min-width: 820px) {
   #extra-product-01,
@@ -277,6 +287,7 @@
     display: flex;
     align-content: flex-start;
     flex-wrap: wrap;
+    flex-direction: column;
   }
 
   .container {

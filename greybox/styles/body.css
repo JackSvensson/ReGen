@@ -67,6 +67,7 @@ main article {
   height: 350px;
   width: 350px;
   align-self: center;
+  border: 1px;
 }
 
 .product-text-container > b {
