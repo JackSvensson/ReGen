@@ -11,10 +11,10 @@ class ToyViewer {
       
       // Behåller samma bildmappning som i original-koden för att matcha dina existerande färgknappar
       this.images = {
-        red: Array.from({length: 12}, (_, i) => `/greybox/assets/Nalle_Turntable_Brun(${i + 1}).png`),
-        blue: Array.from({length: 12}, (_, i) => `/greybox/assets/Nalle_Turntable_Bla(${i + 1}).png`),
-        green: Array.from({length: 12}, (_, i) => `/greybox/assets/Nalle_Turntable_Gul(${i + 1}).png`),
-        yellow: Array.from({length: 12}, (_, i) => `/greybox/assets/Nalle_Turntable_Rosa(${i + 1}).png`)
+        red: Array.from({length: 12}, (_, i) => `/assets/Nalle_Turntable_Brun(${i + 1}).png`),
+        blue: Array.from({length: 12}, (_, i) => `/assets/Nalle_Turntable_Bla(${i + 1}).png`),
+        green: Array.from({length: 12}, (_, i) => `/assets/Nalle_Turntable_Gul(${i + 1}).png`),
+        yellow: Array.from({length: 12}, (_, i) => `/assets/Nalle_Turntable_Rosa(${i + 1}).png`)
       };
       
       this.initializeEventListeners();
