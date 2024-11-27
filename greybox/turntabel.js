@@ -89,7 +89,7 @@ class ToyViewer {
   changeColor(color) {
     if (this.images[color]) {
       this.currentColor = color;
-      this.currentImageIndex = 0;
+      // this.currentImageIndex = 0;
       this.showImage();
     }
   }
